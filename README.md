@@ -1,6 +1,6 @@
-# 🦄 Unicorn Test
+# 🦄 Unicorn Week One
 
-Welcome to the **Unicorn Test** repository!  
+Welcome to the **Unicorn Week One** repository!  
 This project is dedicated to hands-on learning and experimentation during week one.
 
 ## 📚 Purpose
