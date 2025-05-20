@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="loadButton">Load Message</button>
+    <p id="text"></p>
+
+    <script>
+        function fetchMessage() {
+            loadingText();
+            setTimeout(changeText, 2000);
+        }
+
+        function changeText() {
+            document.getElementById("text").innerHTML = "Hello from the future!";
+        }
+
+        function loadingText() {
+            document.getElementById("text").innerHTML = "Loading....";
+        }
+    
+        async function load() {
+            const loadButton = document.getElementById("button");
+            const fetchMessageResult = await fetchMessage();
+
+            loadButton.addEventListener("click", fetchMessageResult);
+        }      
+        
+        load();
+        
+    </script>
+</body>
+</html>
