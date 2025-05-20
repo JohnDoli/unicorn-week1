@@ -11,27 +11,22 @@
 
     <script>
         function fetchMessage() {
-            loadingText();
-            setTimeout(changeText, 2000);
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Hello from the future!");
+                }, 2000);
+            });
         }
-
-        function changeText() {
-            document.getElementById("text").innerHTML = "Hello from the future!";
-        }
-
-        function loadingText() {
-            document.getElementById("text").innerHTML = "Loading....";
-        }
-    
+        
         async function load() {
-            const loadButton = document.getElementById("button");
-            const fetchMessageResult = await fetchMessage();
+            const text = document.getElementById("text");
+            text.textContent = "Loading....";
+            text.textContent = await fetchMessage();
+        }
 
-            loadButton.addEventListener("click", fetchMessageResult);
-        }      
-        
-        load();
-        
+        const loadButton = document.getElementById("loadButton");
+
+        loadButton.addEventListener("click", load);
     </script>
 </body>
 </html>
