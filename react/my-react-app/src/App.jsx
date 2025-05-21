@@ -6,12 +6,14 @@ import Button from "./Button/Button.jsx"
 import Student from "./Student.jsx"
 import UserGreeting from "./Usergreeting.jsx"
 import List from "./List.jsx"
+import MyComponent from "./MyComponent.jsx"
 
 function App() {
 
   return(
     <>
       <Header/>
+      <MyComponent/>
       <Button/>
       <List/>
       <UserGreeting isLoggedIn={true} username="John"/>
