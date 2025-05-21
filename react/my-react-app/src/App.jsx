@@ -7,12 +7,14 @@ import Student from "./Student.jsx"
 import UserGreeting from "./Usergreeting.jsx"
 import List from "./List.jsx"
 import MyComponent from "./MyComponent.jsx"
+import Counter from "./Counter.jsx"
 
 function App() {
 
   return(
     <>
       <Header/>
+      <Counter/>
       <MyComponent/>
       <Button/>
       <List/>
