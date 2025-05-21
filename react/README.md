@@ -41,3 +41,6 @@
 
 ### default props
 
+- defaultní props
+- použity pokud nejsou žádné props komponentu zadány
+
