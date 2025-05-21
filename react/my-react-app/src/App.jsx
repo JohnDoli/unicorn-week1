@@ -12,13 +12,13 @@ function App() {
   return(
     <>
       <Header/>
+      <Button/>
       <List/>
       <UserGreeting isLoggedIn={true} username="John"/>
       <Student name="Spongebob" age={30} isStudent={false}/>
       <Student name="Harry Potter" age={17} isStudent={true}/>
       <Student name="Joel" age={56} isStudent={false}/>
       <Student/>
-      <Button/>
       <Food/>
       <Card/>
       <Card/>
