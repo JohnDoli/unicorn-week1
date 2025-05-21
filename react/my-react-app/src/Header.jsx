@@ -5,7 +5,7 @@ function Header() {
     
     return(
         <header>
-            <h1>Hello world</h1>
+            <h1 style={styles.h1}>Hello world</h1>
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
@@ -19,3 +19,10 @@ function Header() {
 }
 
 export default Header
+
+
+const styles = {
+    h1: {
+        fontFamily: "Consolas, Arial",
+    }
+}
