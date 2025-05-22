@@ -16,7 +16,7 @@ function App() {
     <>
       <ol className='item-container'>
         {items.map((item, index) => (
-          <li key={index}>
+          <li key={index}> 
             <Item text={item.text}/>
           </li>
         ))}

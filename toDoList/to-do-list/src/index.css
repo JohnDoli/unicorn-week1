@@ -26,11 +26,9 @@
 
 .text-container {
   align-items: center;
-  padding: 16px;
-  width: 100%;
+  padding: 8px;
   border: 2px solid black;
   border-radius: 8px;
-  margin-bottom: 24px;
 }
 
 .text-container p {
@@ -40,15 +38,14 @@
 .item-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   margin-bottom: 24px;
-  padding-top: 16px;
   height: 400px;
   list-style: none;
-  padding: 0px;
+  padding: 16px;
   overflow-y: auto;
 }
 
@@ -87,5 +84,6 @@
 }
 
 li {
-  width: auto;
+  width: 100%;
+  margin-bottom: 16px;
 }

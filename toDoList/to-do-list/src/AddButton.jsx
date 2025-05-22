@@ -1,9 +1,11 @@
 function AddButton({ items, setItems, newItem, setNewItem }) {
 
     function addItem() {
-        setItems([...items, newItem])
-        setNewItem("")
-        console.log("Item added")
+        if (newItem.trim() !== "") {
+            setItems([...items, { text: newItem }])
+            setNewItem("")
+            console.log("Item added")
+        }
     }
 
     return(

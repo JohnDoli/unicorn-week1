@@ -2,12 +2,8 @@
 
 function TextInput({newItem, setNewItem}) {
 
-    function HandleChange(event) {
-        setNewItem(event.target.value)
-    }
-
     return (
-        <input className="text-input" type="text" value={newItem} onChange={HandleChange} placeholder="new note..." />
+        <input className="text-input" type="text" value={newItem} onChange={event => setNewItem(event.target.value)} placeholder="new note..." />
     );
 }
 
