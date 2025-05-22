@@ -2,7 +2,7 @@
 function Item({text = "no note"}) {
 
     return (
-        <div className="note-container">
+        <div className="text-container">
             <p>-- {text}</p>
         </div>
     )

@@ -1,8 +1,13 @@
+function AddButton({ items, setItems, newItem, setNewItem }) {
 
-function AddButton() {
+    function addItem() {
+        setItems([...items, newItem])
+        setNewItem("")
+        console.log("Item added")
+    }
 
     return(
-        <button className="add-button">+</button>
+        <button className="add-button" onClick={addItem}>+</button>
     )
 }
 

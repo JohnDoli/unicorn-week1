@@ -1,13 +1,29 @@
 import { useState } from 'react'
 import Item from './Item'
 import AddButton from './AddButton'
+import TextInput from './TextInput'
 
 function App() {
+
+  const [items, setItems] = useState([
+    {text: "Item 1"},
+    {text: "Item 2"},
+    {text: "Item 3"},
+  ])
+  const [newItem, setNewItem] = useState("")
+
   return (
     <>
-      <Item />
-      <div className='note-adding-container'>
-        <AddButton />
+      <ol className='item-container'>
+        {items.map((item, index) => (
+          <li key={index}>
+            <Item text={item.text}/>
+          </li>
+        ))}
+      </ol>
+      <div className='item-adding-container'>
+        <TextInput newItem={newItem} setNewItem={setNewItem}/>
+        <AddButton items={items} setItems={setItems} newItem={newItem} setNewItem={setNewItem}/>
       </div>
     </>
   )
