@@ -44,7 +44,9 @@
   align-items: center;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  margin: 24px;
+  margin: 0px;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 24px;
   height: 400px;
   list-style: none;
@@ -81,7 +83,7 @@
     5px 5px 0px 0px;
   border-radius: 20px;
   height: 40px;
-  width: 75%px;
+  width: 80%;
   margin: 0px;
   padding: 0px;
   padding-left: 8px;
@@ -90,7 +92,9 @@
 .item-adding-container {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 0px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 li {
