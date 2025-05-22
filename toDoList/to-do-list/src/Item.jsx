@@ -3,7 +3,7 @@ function Item({text = "no note"}) {
 
     return (
         <div className="text-container">
-            <p>-- {text}</p>
+            <p>{text}</p>
         </div>
     )
 }
