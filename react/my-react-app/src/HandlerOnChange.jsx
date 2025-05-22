@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 function HandlerOnChange() {
-    const [name, setName] = useState("guest")
+    const [name, setName] = useState("ahoj")
 
     function handleNameChange(event){
         setName(event.target.value)
