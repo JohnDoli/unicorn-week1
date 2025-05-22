@@ -10,16 +10,18 @@ function App() {
 
   return (
     <>
-      <ol className='item-container'>
-        {items.map((item, index) => (
-          <li key={index}> 
-            <Item text={item.text}/>
-          </li>
-        ))}
-      </ol>
-      <div className='item-adding-container'>
-        <TextInput newItem={newItem} setNewItem={setNewItem}/>
-        <AddButton items={items} setItems={setItems} newItem={newItem} setNewItem={setNewItem}/>
+      <div className='app-container'>
+        <ol className='item-container'>
+          {items.map((item, index) => (
+            <li key={index}> 
+              <Item text={item.text}/>
+            </li>
+          ))}
+        </ol>
+        <div className='item-adding-container'>
+          <TextInput newItem={newItem} setNewItem={setNewItem}/>
+          <AddButton items={items} setItems={setItems} newItem={newItem} setNewItem={setNewItem}/>
+        </div>
       </div>
     </>
   )
