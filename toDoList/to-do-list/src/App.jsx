@@ -5,11 +5,7 @@ import TextInput from './TextInput'
 
 function App() {
 
-  const [items, setItems] = useState([
-    {text: "Item 1"},
-    {text: "Item 2"},
-    {text: "Item 3"},
-  ])
+  const [items, setItems] = useState([])
   const [newItem, setNewItem] = useState("")
 
   return (
