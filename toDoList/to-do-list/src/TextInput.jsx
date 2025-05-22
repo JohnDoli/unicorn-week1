@@ -1,8 +1,9 @@
-function TextInput({ newItem, setNewItem }) {
+function TextInput({ newItem, setNewItem, addItem }) {
 
     function keyDown(event) {
         if (event.key === "Enter") {
-            console.log("Enter key pressed");
+            console.log("Enter key pressed")
+            addItem()
         }
     }
 

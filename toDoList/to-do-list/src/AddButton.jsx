@@ -1,11 +1,4 @@
-function AddButton({ items, setItems, newItem, setNewItem }) {
-
-    function addItem() {
-        if (newItem.trim() !== "") {
-            setItems([...items, { text: newItem }])
-            setNewItem("")
-        }
-    }
+function AddButton({ items, setItems, newItem, setNewItem, addItem }) {
 
     return(
         <button className="add-button" onClick={addItem}>+</button>
