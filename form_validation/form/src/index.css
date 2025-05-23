@@ -50,6 +50,13 @@ form.form {
   gap: 0.1rem;
 }
 
+span {
+  font-size: 0.6rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #bc0000;
+}
+
 label {
   font-size: 0.8rem;
   font-family: 'Courier New', Courier, monospace;

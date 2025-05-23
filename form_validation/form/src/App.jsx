@@ -19,28 +19,32 @@ function App() {
       name: "username",
       type: "text",
       placeholder: "johndoe123",
-      label: "Username"
+      label: "Username",
+      errorMessage: "3-16 char., letters and numbers only",
     },
     {
       id: 2,
       name: "email",
       type: "email",
       placeholder: "john@email.com",
-      label: "Email"
+      label: "Email",
+      errorMessage: "not valid email",
     },
     {
       id: 3,
       name: "phoneNumber",
       type: "tel",
       placeholder: "555-123-4567",
-      label: "Phone Number"
+      label: "Phone Number",
+      errorMessage: "not valid number",
     },
     {
       id: 4,
       name: "password",
       type: "password",
       placeholder: "Choose a strong password",
-      label: "Password"
+      label: "Password",
+      errorMessage: "8-20 char., min. 1 letter, 1 number and 1 special char.",
     }
   ]
 
