@@ -42,18 +42,19 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    console.log(values)
   }
 
-  function onChange(e) {
-    setValues({...values, [e.target.name]: e.target.value})
+  function handleChange(e) {
+    setValues({ ...values, [e.target.name]: e.target.value })
   }
+
+  console.log(values)
 
   return (
     <>
       <form className="form" onSubmit={handleSubmit}>
         {inputs.map((input) => (
-          <FormInput key={input.id} {...input} value={values[input.name]} onChange={onChange}/>
+          <FormInput key={input.id} {...input} value={values[input.name]} handleChange={handleChange} />
         ))}
         <button>Submit</button>
       </form>

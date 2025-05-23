@@ -1,10 +1,10 @@
 
-function FormInput({ label, name, type, placeholder, onChange, ...input }) {
+function FormInput({label, handleChange, ...input }) {
 
     return(
         <div>
             <label>{label}</label>
-            <input {...input} onChange={onChange}/>
+            <input {...input} onChange={handleChange}/>
         </div>
     )
 }
