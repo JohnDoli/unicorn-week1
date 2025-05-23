@@ -1,24 +1,45 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  background: #e5e5c9;
+  min-height: 100vh;
+}
+
+#root, .app-center {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  background: #f5f7fa;
+  background: none;
 }
 
 form.form {
-  background: #fff;
-  padding: 2.5rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1.5px 6px rgba(0,0,0,0.04);
+  background: #f8f8f8;
+  padding: 1.5rem 1.2rem;
+  border-radius: 0;
+  border: 3px ridge #bdbdbd;
+  box-shadow: 2px 2px 0 #888, 4px 4px 0 #ccc;
   min-width: 320px;
   max-width: 400px;
   width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.2rem;
+  position: relative;
 }
 
 .form > div {
@@ -26,46 +47,59 @@ form.form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.1rem;
 }
 
 label {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  color: #333;
+  font-size: 0.8rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.05rem;
+  text-shadow: none;
 }
 
 input {
   width: 100%;
-  padding: 0.7rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  border: 2px inset #bdbdbd;
+  border-radius: 0;
   font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  background: #f4f4e2;
   transition: border 0.2s, box-shadow 0.2s;
-  background: #f9f9f9;
-  margin: 0.5rem 0;
+  margin: 0.05rem 0 0.03rem 0;
   box-sizing: border-box;
+  color: #222;
+  outline: none;
+  box-shadow: 1px 1px 0 #bbb;
 }
 
 input:focus {
-  border-color: #7b5cff;
-  outline: none;
-  box-shadow: 0 0 0 2px #e0e7ff;
+  border: 2px solid #888;
+  background: #fff;
+  box-shadow: 2px 2px 0 #bbb;
 }
 
 button {
-  padding: 0.8rem 2rem;
-  background: linear-gradient(90deg, #7b5cff 0%, #4e8cff 100%);
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  font-weight: 600;
+  padding: 0.6rem 2rem;
+  background: linear-gradient(180deg, #e0e0e0 0%, #bdbdbd 100%);
+  color: #222;
+  border: 2px outset #bdbdbd;
+  border-radius: 0;
+  font-size: 1.05rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(123,92,255,0.08);
+  box-shadow: 2px 2px 0 #888, 4px 4px 0 #ccc;
+  letter-spacing: 0.1px;
+  text-shadow: none;
+  transition: background 0.2s, box-shadow 0.2s, border 0.2s;
 }
 
 button:hover, button:focus {
-  background: linear-gradient(90deg, #4e8cff 0%, #7b5cff 100%);
-  box-shadow: 0 4px 16px rgba(123,92,255,0.12);
+  background: linear-gradient(180deg, #bdbdbd 0%, #e0e0e0 100%);
+  border: 2px inset #bdbdbd;
+  box-shadow: 1px 1px 0 #888, 2px 2px 0 #ccc;
+  outline: none;
 }

@@ -18,25 +18,29 @@ function App() {
       id: 1,
       name: "username",
       type: "text",
-      placeholder: "Username",
+      placeholder: "johndoe123",
+      label: "Username"
     },
     {
       id: 2,
       name: "email",
       type: "email",
-      placeholder: "Email",
+      placeholder: "john@email.com",
+      label: "Email"
     },
     {
       id: 3,
       name: "phoneNumber",
       type: "tel",
-      placeholder: "Phone Number",
+      placeholder: "555-123-4567",
+      label: "Phone Number"
     },
     {
       id: 4,
       name: "password",
       type: "password",
-      placeholder: "Password",
+      placeholder: "Choose a strong password",
+      label: "Password"
     }
   ]
 
